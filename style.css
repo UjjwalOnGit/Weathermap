@@ -56,7 +56,10 @@ body {
 }
 
 .header-right {
+  display: flex;
+  align-items: center;
   float: right;
+  gap: 10px;
 }
 
 .mainBox {
@@ -89,17 +92,17 @@ body {
   padding: 20px 0 0;
   width: 100%;
   max-width: 180px;
-  
+
 }
 
 .form__field {
   font-family: "Roboto Condensed", sans-serif;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #9b9b9b;
+  border-bottom: 2px solid var(--text-muted);
   outline: 0;
   font-size: 17px;
-  color: #fff;
+  color: var(--text-primary);
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -121,7 +124,7 @@ body {
   display: block;
   transition: 0.2s;
   font-size: 17px;
-  color: #9b9b9b;
+  color: var(--text-secondary);
   pointer-events: none;
 }
 
@@ -129,7 +132,7 @@ body {
   padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #116399, #38caef);
+  border-color: var(--text-primary);
   border-image-slice: 1;
 }
 
@@ -139,7 +142,7 @@ body {
   display: block;
   transition: 0.2s;
   font-size: 17px;
-  color: #38caef;
+  color: var(--text-secondary);
   font-weight: 700;
 }
 
