@@ -99,12 +99,6 @@ body{
     margin: 0;
   }
 
-  #typeImage{
-    padding-left: 10vw;
-    padding-top: 3vh;
-    width: 25em;
-  }
-
   #temp{
     padding-left: 14vw;
     color: var(--text-primary);
@@ -114,9 +108,29 @@ body{
   }
 
   #weatherImage{
-    fill: white;
-  stroke: white; /* if applicable */
-    width: 15em;
-    padding-left: 10vw;
-    padding-top: 3vh;
+    font-size: 12em;
+    padding-left: 16vw;
+    padding-top: 4vh;
+  }
+
+  #temp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top:  1vh;
+    padding-left: 18vw;
+    color: var(--text-primary);
+    font-size: 7em;
+    font-weight: 400;
+  }
+
+  .highLow{
+    color: var(--text-secondary);
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-left: 1vw;
+    display: ruby-text;
+    letter-spacing: 0.5px;
+  }
+
+  #highTemp{
+    padding-left: 17vw;
   }
