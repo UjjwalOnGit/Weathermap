@@ -2,135 +2,201 @@
 
 
 :root {
-    /* Background colors */
-    --bg-main: #0f0f0f;     
-    --bg-card: #1a1a1a;       
-    --bg-accent: #222222;     
-  
-    /* Text colors */
-    --text-primary: #ffffff;  
-    --text-secondary: #aaaaaa; 
-    --text-muted: #777777; 
-  
+  /* Background colors */
+  --bg-main: #0f0f0f;
+  --bg-card: #1a1a1a;
+  --bg-accent: #222222;
 
-  
-    /* Borders and dividers */
-    --border-color: #2a2a2a; 
-  
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  --text-muted: #777777;
+
+
+
+  /* Borders and dividers */
+  --border-color: #2a2a2a;
+
 }
 
-body{
-    margin: 0;
-    background-color: var(--bg-main);
-    font-family: "Roboto Condensed", sans-serif;
-    color: var(--text-primary);
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--text-primary);
 }
 
 
-    /* Header */
+/* Header */
 .header {
-    overflow: hidden;
-    background-color: var(--bg-main);
-    padding: 20px 10px;
-  }
+  overflow: hidden;
+  background-color: var(--bg-main);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: var(--text-primary);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header a:hover {
+  background-color: var(--bg-card);
+}
+
+.header-right {
+  float: right;
+}
+
+.mainBox {
+  width: 95vw;
+  height: 90vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  border: solid 1px var(--border-color);
+}
+
+/* Hero box */
+.heroBox {
+  float: left;
+  width: 49.5%;
+  height: 100%;
+  border: solid 1px var(--border-color);
+}
+
+/* Content Box */
+.contentBox {
+  float: right;
+  width: 50%;
+  height: 100%;
+  border: solid 1px var(--border-color);
+}
+
+/* Input box  */
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 180px;
   
-  .header a {
-    float: left;
-    color: var(--text-primary);
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
-  }
-  
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .header a:hover {
-    background-color: var(--bg-card);
-  }
-    
-  .header-right {
-    float: right;
-  }
+}
 
-  .mainBox{
-    width: 95vw;
-    height: 90vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    border: solid 1px var(--border-color);
-  }
+.form__field {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
 
-    /* Hero box */
-  .heroBox{
-    float: left;
-    width: 49.5%;
-    height: 100%;
-    border: solid 1px var(--border-color);
-  }
-    /* Content Box */
-  .contentBox{
-    float: right;
-    width: 50%;
-    height: 100%;
-    border: solid 1px var(--border-color);
-  }
+.form__field::placeholder {
+  color: transparent;
+}
 
-  #location{
-    padding-top: 6vh;
-    padding-left: 6vw;
-    color: var(--text-primary);
-    font-size: 5em;
-    font-weight: 400;
-    margin: 0;
-  }
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
 
-  #weatherCondetion{
-    color: var(--text-secondary);
-    font-size: 2em;
-    font-weight: 400;
-    padding-left: 6vw;
-    margin: 0;
-  }
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
 
-  #temp{
-    padding-left: 14vw;
-    color: var(--text-primary);
-    font-size: 10em;
-    font-weight: 400;
-    margin: 0;
-  }
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
 
-  #weatherImage{
-    font-size: 12em;
-    padding-left: 16vw;
-    padding-top: 4vh;
-  }
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #38caef;
+  font-weight: 700;
+}
 
-  #temp{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top:  1vh;
-    padding-left: 18vw;
-    color: var(--text-primary);
-    font-size: 7em;
-    font-weight: 400;
-  }
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
 
-  .highLow{
-    color: var(--text-secondary);
-    font-size: 1.5em;
-    font-weight: 600;
-    padding-left: 1vw;
-    display: ruby-text;
-    letter-spacing: 0.5px;
-  }
+#location {
+  padding-top: 6vh;
+  padding-left: 6vw;
+  color: var(--text-primary);
+  font-size: 5em;
+  font-weight: 400;
+  margin: 0;
+}
 
-  #highTemp{
-    padding-left: 17vw;
-  }
+#weatherCondetion {
+  color: var(--text-secondary);
+  font-size: 2em;
+  font-weight: 400;
+  padding-left: 6vw;
+  margin: 0;
+}
+
+#temp {
+  padding-left: 14vw;
+  color: var(--text-primary);
+  font-size: 10em;
+  font-weight: 400;
+  margin: 0;
+}
+
+#weatherImage {
+  font-size: 12em;
+  padding-left: 16vw;
+  padding-top: 4vh;
+}
+
+#temp {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 1vh;
+  padding-left: 18vw;
+  color: var(--text-primary);
+  font-size: 7em;
+  font-weight: 400;
+}
+
+.highLow {
+  color: var(--text-secondary);
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-left: 1vw;
+  display: ruby-text;
+  letter-spacing: 0.5px;
+}
+
+#highTemp {
+  padding-left: 17vw;
+}
