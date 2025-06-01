@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
     /* Background colors */
     --bg-main: #0f0f0f;     
@@ -69,7 +70,7 @@ body{
     /* Hero box */
   .heroBox{
     float: left;
-    width: 49.78%;
+    width: 49.5%;
     height: 100%;
     border: solid 1px var(--border-color);
   }
@@ -96,4 +97,25 @@ body{
     font-weight: 400;
     padding-left: 6vw;
     margin: 0;
+  }
+
+  #typeImage{
+    padding-left: 10vw;
+    padding-top: 3vh;
+    width: 25em;
+  }
+
+  #temp{
+    padding-left: 14vw;
+    color: var(--text-primary);
+    font-size: 10em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  #weatherImage{
+    color: var(--text-primary);
+    font-size: 14em;
+    padding-left: 10vw;
+    padding-top: 3vh;
   }
