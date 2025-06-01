@@ -114,8 +114,9 @@ body{
   }
 
   #weatherImage{
-    color: var(--text-primary);
-    font-size: 12em;
+    fill: white;
+  stroke: white; /* if applicable */
+    width: 15em;
     padding-left: 10vw;
     padding-top: 3vh;
   }
