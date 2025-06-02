@@ -24,6 +24,7 @@ body {
   background-color: var(--bg-main);
   font-family: "Roboto Condensed", sans-serif;
   color: var(--text-primary);
+  user-select: text;
 }
 
 
@@ -32,6 +33,7 @@ body {
   overflow: hidden;
   background-color: var(--bg-main);
   padding: 20px 10px;
+  margin-bottom: 0;
 }
 
 .header a {
@@ -64,7 +66,7 @@ body {
 
 .mainBox {
   width: 95vw;
-  height: 90vh;
+  height: 89vh;
   margin-left: 2vw;
   margin-right: 2vw;
   border: solid 1px var(--border-color);
@@ -193,9 +195,10 @@ button:hover{
 }
 
 #weatherImage {
-  font-size: 12em;
-  padding-left: 16vw;
+  padding-left: 14vw;
   padding-top: 4vh;
+  width: 19em;
+  filter: grayscale(100%);
 }
 
 #temp {
