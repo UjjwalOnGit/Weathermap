@@ -9,27 +9,37 @@
 
 ## 🌐 Overview
 
-**Weathermap** is a dynamic web application that provides real-time weather information based on user input. Utilizing modern web technologies, it fetches and displays current weather data for any specified location.
+**Weathermap** is a real-time weather app that displays current weather details based on user input, combined with an interactive map interface using [Leaflet.js](https://leafletjs.com/). It's simple, clean, and super informative.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **HTML5**: Structuring the content.
-- **CSS3**: Styling and layout.
-- **JavaScript (ES6)**: Fetching and displaying weather data.
-- **OpenWeatherMap API**: Providing up-to-date weather information.
+- 🧱 **HTML5** – Markup structure  
+- 🎨 **CSS3** – Styling and responsive layout  
+- 🧠 **JavaScript (ES6)** – Logic & API integration  
+- ☁️ **OpenWeatherMap API** – Fetching real-time weather data  
+- 🗺️ **[Leaflet.js](https://leafletjs.com/)** – For embedding an interactive map with markers and layers
 
 ---
 
 ## 🚀 Getting Started
 
-1. **Clone the repository:**
+1. **Clone the repo:**
 
    ```bash
    git clone https://github.com/UjjwalOnGit/Weathermap.git
    cd Weathermap
-Open index.html in your preferred web browser.
+2. Open index.html in your browser
+You can also use Live Server in VS Code for a smoother dev experience.
 
-    Alternatively, use a live server extension in your code editor for real-time updates.
 
+Folder Structure
+
+Weathermap/
+```
+├── index.html
+├── map.html
+├── style.css
+├── main.js
+└── README.md
