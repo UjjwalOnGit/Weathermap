@@ -151,6 +151,22 @@ body {
   box-shadow: none;
 }
 
+button{
+  background: var(--bg-main);
+  border: none;
+  color: var(--text-primary);
+  font-size: 1em;
+  transition:  0.2s;
+  padding: 12px;
+  border-radius: 2px;
+}
+button:hover{
+  background-color: var(--bg-card);
+
+}
+
+
+
 #location {
   padding-top: 6vh;
   padding-left: 6vw;
