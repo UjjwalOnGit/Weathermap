@@ -10,7 +10,6 @@ async function checkweather(city) {
     const response = await fetch(APIurl + city + `&appid=${APIKey}`);
     var output = await response.json();
 
-    console.log(output);
 
     document.getElementById("location").innerHTML = output.name; 
     document.getElementById("temp").innerHTML = Math.floor(output.main.feels_like)+"°"; 
@@ -38,7 +37,16 @@ async function checkweather(city) {
       
 }
 
-
+// btn click work
 inputBtn.addEventListener("click", ()=>{
     checkweather(inputBox.value);
 })
+
+// enter key fix
+inputBox.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        inputBtn.click(); 
+    }
+});
+
