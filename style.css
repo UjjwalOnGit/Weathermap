@@ -223,6 +223,43 @@ button:hover{
   padding-left: 17vw;
 }
 
-#getLocation{
-  margin-left: 47vw;
+#showTempBtn{
+  border: 1px solid var(--border-color);
+  font-size: 1.5em;
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+
+
+.mapBox{
+  min-height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.box{
+  max-width: 600px;
+}
+
+.hero-heading{
+  font-size: 5em;
+  margin-bottom: 40px;
+}
+.hero-subtext{
+  font-size: 1.2em;
+}
+
+#map{
+  width: 500px;
+  margin: 0;
+  height: 500px;
+  border-radius: 1.5em;
 }
