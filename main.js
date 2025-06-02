@@ -1,9 +1,12 @@
+// temprature
 const APIKey = "d9e2f08a5cbb73d08a34ce3d5739a56b";
 const APIurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const inputBox = document.querySelector(".form__group input");
 const inputBtn = document.getElementById("btn");
 const weatherIcon = document.getElementById("weatherImage");
 
+// map
+const getLocation = document.getElementById("getLocation");
 
 
 async function checkweather(city) {
@@ -50,3 +53,25 @@ inputBox.addEventListener("keydown", (event) => {
     }
 });
 
+
+
+getLocation.addEventListener("click", evt=>{
+    if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(position=>{
+         let lon = position.coords.longitude;   
+         let lat = position.coords.latitude;   
+
+        let googleMapUrl = `https://maps.googleapis.com/maps/api/staticmap?${lat},${lon}&zoom=11&size=400x400`;
+
+        const mapIamge = document.getElementById("mapIamge");
+        mapIamge.src = googleMapUrl;
+        
+         console.log(lat,lon);
+        },error=>{
+            console.log("error code")
+        });
+    }
+    else{
+        console.log("Not supported")
+    }
+})
