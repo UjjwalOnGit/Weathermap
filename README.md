@@ -7,23 +7,23 @@
 
 ---
 
-## 🌐 Overview
+## Overview
 
 **Weathermap** is a real-time weather app that displays current weather details based on user input, combined with an interactive map interface using [Leaflet.js](https://leafletjs.com/). It's simple, clean, and super informative.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- 🧱 **HTML5** – Markup structure  
-- 🎨 **CSS3** – Styling and responsive layout  
-- 🧠 **JavaScript (ES6)** – Logic & API integration  
-- ☁️ **OpenWeatherMap API** – Fetching real-time weather data  
-- 🗺️ **[Leaflet.js](https://leafletjs.com/)** – For embedding an interactive map with markers and layers
+- **HTML5** – Markup structure  
+- **CSS3** – Styling and responsive layout  
+- **JavaScript (ES6)** – Logic & API integration  
+- **OpenWeatherMap API** – Fetching real-time weather data  
+- **[Leaflet.js](https://leafletjs.com/)** – For embedding an interactive map with markers and layers
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repo:**
 
