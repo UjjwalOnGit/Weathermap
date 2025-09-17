@@ -16,14 +16,21 @@
     <div class="header-right">
 
       <div class="form__group field">
-        <input class="form__field" placeholder="Location">
-        <label for="name" class="form__label">Location</label>
+        <input class="form__field" placeholder=" ">
+        <label for="name" class="form__label">Location---------ctrl + k</label>
       </div>
       <button id="btn" type="button"><i class="fa-solid fa-magnifying-glass-location"></i></button>
 
       <a href="index.html">Home</a>
       <a href="map.html">Map</a>
       <a href="index.html">About</a>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div class="input_box">
+      <input class="form__field" placeholder="Location" id="cityInput">
+      <div id="suggestions"></div>
     </div>
   </div>
 
@@ -43,6 +50,7 @@
     </div>
 
     <!-- Content Box -->
+     <button onclick="getLocation()">Try It</button>
 
   <script src="https://kit.fontawesome.com/255f0753a7.js" crossorigin="anonymous"></script>
   <script src="main.js"></script>
